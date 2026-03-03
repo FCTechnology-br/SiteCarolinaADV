@@ -8,4 +8,9 @@ class HomeController
     {
         require __DIR__ . '/../Views/layouts/main.php';
     }
+
+    public function cartao()
+    {
+        require __DIR__ . '/../Views/layouts/cartao.php';
+    }
 }
