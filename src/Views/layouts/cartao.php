@@ -6,17 +6,18 @@
     <title>Carolina Macedo - Cartão de Visita Virtual</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-main: #ceb076; /* Ouro Champagne */
-            --primary-navy: #172a44; /* Azul Noturno */
-            --bg-page: #f4f5f7;     /* Fundo da tela claro e premium */
-            --bg-card: #ffffff;     /* Cartão branco puro */
-            --text-dark: #1e293b;    /* Cinza/Azul muito escuro para títulos */
-            --text-light: #64748b;   /* Cinza suave para descrição */
+            --primary-main: #d8b46a; /* Ouro */
+            --primary-navy: #0b0b0d; /* Fundo Escuro */
+            --bg-page: #050507;     /* Fundo da tela escuro */
+            --bg-card: #0b0b0d;     /* Cartão preto */
+            --text-dark: #f3f2ef;    /* Texto claro */
+            --text-light: rgba(243, 242, 239, 0.7); /* Cinza suave */
             --font-main: 'Outfit', sans-serif;
+            --font-heading: 'Playfair Display', serif;
         }
 
         * {
@@ -42,11 +43,11 @@
             background: var(--bg-card);
             border-radius: 24px;
             padding: 40px 25px;
-            box-shadow: 0 20px 50px rgba(23, 42, 68, 0.08); /* Sombra super orgânica azulada */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             text-align: center;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(23, 42, 68, 0.05);
+            border: 1px solid rgba(216, 180, 106, 0.1);
         }
 
         .cover-bg {
@@ -55,7 +56,7 @@
             left: 0;
             width: 100%;
             height: 140px;
-            background: linear-gradient(135deg, var(--primary-navy) 0%, #0d1a29 100%);
+            background: linear-gradient(135deg, #050507 0%, #000000 100%);
             z-index: 0;
         }
 
@@ -80,10 +81,10 @@
             width: 140px;
             height: 140px;
             border-radius: 50%;
-            border: 4px solid var(--bg-card);
+            border: 4px solid var(--primary-main);
             object-fit: cover;
-            background-color: #fff;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            background-color: var(--bg-card);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
 
         .profile-info {
@@ -93,9 +94,10 @@
         }
 
         .profile-name {
-            font-size: 1.8rem;
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
             font-weight: 800;
-            color: var(--primary-navy);
+            color: var(--primary-main);
             margin-bottom: 5px;
         }
 
@@ -124,8 +126,8 @@
             padding: 16px 20px;
             border-radius: 12px;
             background-color: transparent;
-            border: 2px solid var(--primary-navy);
-            color: var(--primary-navy);
+            border: 2px solid var(--primary-main);
+            color: var(--text-dark);
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
@@ -141,10 +143,10 @@
         }
 
         .link-btn:hover {
-            background-color: var(--primary-navy);
-            color: #fff;
+            background-color: var(--primary-main);
+            color: #0b0b0d;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(23, 42, 68, 0.15);
+            box-shadow: 0 8px 20px rgba(216, 180, 106, 0.15);
         }
 
         .link-btn:hover i {
@@ -152,23 +154,24 @@
         }
 
         .link-btn.solid {
-            background-color: var(--primary-navy);
-            color: #fff;
-            border-color: var(--primary-navy);
+            background-color: var(--primary-main);
+            color: var(--primary-navy);
+            border-color: var(--primary-main);
         }
         
         .link-btn.solid i {
-            color: var(--primary-main);
+            color: var(--primary-navy);
         }
 
         .link-btn.solid:hover {
-            background-color: #0d1a29;
-            box-shadow: 0 8px 20px rgba(23, 42, 68, 0.25);
+            background-color: transparent;
+            color: var(--text-dark);
+            box-shadow: 0 8px 20px rgba(216, 180, 106, 0.25);
         }
 
         .address-display {
-            background: rgba(23, 42, 68, 0.03);
-            border: 1px solid rgba(23, 42, 68, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(216, 180, 106, 0.1);
             border-radius: 12px;
             padding: 15px;
             margin-top: -5px;
@@ -215,7 +218,7 @@
 
         <div class="profile-info">
             <h1 class="profile-name">Carolina Macedo</h1>
-            <p class="profile-role">Advogada Previdenciarista</p>
+            <p class="profile-role">Especialista Previdenciarista</p>
         </div>
 
         <div class="links-container">
@@ -262,9 +265,9 @@
             const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Macedo;Carolina;;;
-FN:Carolina Macedo Advogada
-ORG:Sociedade Individual de Advocacia;
-TITLE:Advogada Previdenciarista
+FN:Carolina Macedo Especialista
+ORG:Sociedade;
+TITLE:Especialista Previdenciarista
 TEL;type=WORK;type=VOICE;type=pref:+55 11 96775-5050
 EMAIL:previdencia.carol@gmail.com
 URL:https://advcarolinamacedo.com.br/cartao

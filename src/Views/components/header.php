@@ -2,7 +2,7 @@
     <div class="container">
         <div class="logo">
             <a href="/">
-                <img src="assets/images/logo-transparent.png" alt="Carolina Macedo - Sociedade Individual de Advocacia" style="height: 120px; width: auto; display: block;">
+                <img src="assets/images/logo-transparent.png" alt="Carolina Macedo - Especialista Previdenciarista" style="height: 120px; width: auto; display: block;">
             </a>
         </div>
         <nav class="main-nav">

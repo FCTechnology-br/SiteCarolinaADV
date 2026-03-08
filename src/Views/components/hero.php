@@ -5,12 +5,12 @@
             <p>Garantindo seus direitos perante o INSS com agilidade e segurança jurídica. Atendimento humanizado e focado na melhor solução para o seu caso.</p>
             <div class="hero-buttons">
                 <a href="#beneficios" class="btn btn-primary">Conheça Seus Direitos</a>
-                <a href="#contato" class="btn btn-secondary">Fale com a Advogada</a>
+                <a href="#contato" class="btn btn-secondary">Fale com a Especialista</a>
             </div>
         </div>
         <div class="hero-image">
             <div class="image-profile">
-                <img src="assets/images/hero-advogada.png" alt="Advogada Especialista em INSS" class="hero-advogada-img">
+                <img src="assets/images/hero-advogada.png" alt="Especialista em INSS" class="hero-advogada-img">
             </div>
         </div>
     </div>
