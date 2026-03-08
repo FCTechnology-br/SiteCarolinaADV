@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <?php $cssPath = __DIR__ . '/../../../public/assets/css/style.css'; ?>
+    <?php $cssPath = __DIR__ . '/../../../assets/css/style.css'; ?>
     <link rel="stylesheet" href="assets/css/style.css?v=<?= file_exists($cssPath) ? filemtime($cssPath) : time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
